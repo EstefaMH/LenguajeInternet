@@ -2,6 +2,8 @@
     --color-blue : #001933;
     --color-grey : #4E5357;
     --grey-title : #BAB8B9;
+    --color-orange : #FF6600;
+    --color-grey-btn :#F5F5F5;
 }
 
 body{
@@ -49,7 +51,7 @@ body{
 }
 
 .header-logo{
-    flex-basis: 40%;
+    flex-basis: 50%;
 }
 
 .logo-img{
@@ -69,6 +71,92 @@ body{
     cursor: pointer;
 }
 
+.btn-menu{
+    border: none;
+    border-radius: 100%;
+    background-color: var(--color-grey-btn);
+}
+
+.btn-menu:hover{
+    background-color: #FF6600;
+}
+
+
+.hamburger{
+   border: 2px solid var(--color-grey-btn);
+}
+
+.main-menu{
+    display: none;
+}
+
+/*------------- MENU ---------------*/
+@media screen and (min-width:900px) {
+    .header-logo{
+        flex-basis: 20%;
+    }
+
+    .header-info{
+        display: flex;
+        justify-content: end;
+        flex-basis: 80%;
+    }
+
+    .main-menu{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    
+    .menu-list {
+        display: inline-block;
+        position: relative;
+        z-index: 3;
+        
+    }
+    
+    .menu-list-btn {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .menu-list-link{
+        text-decoration: none;
+        font-family: 'ArabotoBold';
+        color: var(--color-blue);
+        font-size: 1.2rem;
+    }
+    
+    .menu-list-link:hover{
+        color: var(--color-orange);
+    }
+    .submenu-list {
+        display: none;
+        position: absolute;
+        width: 100%;
+        overflow: auto;
+        background-color: white;
+    }
+    
+    .menu-list:hover .submenu-list {
+        display: block;
+        z-index: 3;
+    }
+    
+    .submenu-list a {
+        display: block;
+        color: #000000;
+        padding: 5px;
+        text-decoration: none;
+    }
+    
+    .submenu-list a:hover {
+        color: #FFFFFF;
+        background-color: var(--color-orange);
+    }
+    
+    
+}
 
 /*-------------------- MAIN --------------------*/
 
@@ -101,6 +189,7 @@ body{
     text-align: justify;
     
 }
+
 
 .info-career-title-data{
     color: var(--grey-title);
@@ -138,22 +227,42 @@ body{
     margin: 0;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-
 }
 
 .sub-title-career{
     color: var(--color-blue);
     text-align: center;
     font-size: 2.5rem;
+    font-family: 'ArabotoBlack';
+    background-color: var(--color-grey-btn);
+    padding: 5% 0 5% 0;
+}
+
+.list-laborField{
+   margin-left: 5%;
+   font-weight: 500;
+   line-height: 1cm;
+}
+.container-career-img-ing{   
+    display: flex;
+    justify-content: space-around;
+}
+
+.career-img-ing{
+    width: 45%;
+}
+
+.container-career-enrollment{
+    margin-top: 10%;
+    text-align: center;
 }
 
 .container-career-cycles{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 2%;
+    align-items: stretch;
+    padding: 2%;  
 }
 
 .career-cycles-card{
@@ -163,6 +272,12 @@ body{
     padding: 3%;
     margin: 2%;
     text-align: center;
+    height: 100%;
+}
+
+.career-cycles-card-linkRates{
+    color: var(--color-orange);
+    font-size: 1.2rem;
 }
 
 
@@ -212,14 +327,14 @@ body{
     }
 
     .container-career-img-ing{
-        background-color: yellow;
+       
         display: flex;
         width: 65%;
     }
 
     .career-img-ing{
         width: 50%;
-        height: 100%;
+        height: 80%;
     }
     
 }

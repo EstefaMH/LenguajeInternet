@@ -1,24 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Es-es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
     <link rel="stylesheet" type="text/css" href="./style.css">
+
     <title>Ingeniería software | U Compensar</title>
 </head>
 
 <body>
+
+
+    <!--<div class="minimenu-container">
+        <div class="header-logo">
+            <img class="logo-img" src="img/LOGO U.svg">
+        </div>
+        <nav class="header-minimenu">
+            <i>
+                <a href="https://ucompensar.edu.co/inscripciones/">Aspirantes</a>
+                <a
+                    href="https://unipanamericanaeduco.sharepoint.com/portal%20mipana/SitePages/INICIOPORTAL.aspx">Estudiantes</a>
+                <a
+                    href="https://academico.ucompensar.edu.co:8091/academusoft/academico/inscripcionLinea4/consultaPublica/inicio.jsp?_ga=2.13743991.1975776578.1629394524-1415034027.1626278245">Estado
+                    de Admisión</a>
+                <a
+                    href="https://academico.ucompensar.edu.co:8091/academusoft/academico/inscripcion/ins_control_acceso.jsp?proceso=4">Reingresos</a>
+                <a href="https://estudiantes.ucompensar.edu.co:8081/pol/">Pago en Línea</a>
+                <a
+                    href="https://unipanamericanaeduco.sharepoint.com/Portal%20MiPana/SitePages/INICIOPORTAL.aspx">Aplicativos</a>
+                <a href="https://ucompensar.edu.co/emisora/">Emisora</a>
+                <a href="https://ucompensar.edu.co/blog/">Blog</a>
+
+            </i>
+        </nav>
+    </div>-->
     <header id="container-header">
         <div class="header-logo">
             <img class="logo-img" src="img/LOGO U.svg">
         </div>
         <div class="header-info">
-            <button class="header-icon"><img src="./icons/bx-search-alt.svg"></button>
-            <button class="header-icon"><img src="./icons/bx-menu (2).svg"></button>
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="container-fluid">
+                    <button class="btn-menu btn btn-outline-info font-weight-bold m-1" type="submit"><img
+                            class="icon-search" src="./icons/bx-search-alt.svg"></button>
+                    <button class="btn-menu hamburger navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span><img class="" src="./icons/bx-menu (2).svg"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-black" aria-current="page"
+                                    href="https://ucompensar.edu.co/inscripciones/">
+                                    <em>Aspirantes</em>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-black" aria-current="page"
+                                    href="https://academico.ucompensar.edu.co:8091/academusoft/academico/inscripcionLinea4/consultaPublica/inicio.jsp?_ga=2.13743991.1975776578.1629394524-1415034027.1626278245">
+                                    <em>Estado de Admisión</em>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-black" aria-current="page"
+                                    href="https://academico.ucompensar.edu.co:8091/academusoft/academico/inscripcion/ins_control_acceso.jsp?proceso=4">
+                                    <em>Reingresos</em>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-black" aria-current="page"
+                                    href="https://estudiantes.ucompensar.edu.co:8081/pol/">
+                                    <em>Pago en Línea</em>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-black" aria-current="page"
+                                    href="https://unipanamericanaeduco.sharepoint.com/Portal%20MiPana/SitePages/INICIOPORTAL.aspx">
+                                    <em>Aplicativos</em>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-black" aria-current="page"
+                                    href="https://ucompensar.edu.co/emisora/">
+                                    <em>Emisora</em>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-black" aria-current="page"
+                                    href="https://ucompensar.edu.co/blog/">
+                                    <em>Blog</em>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--<form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-info font-weight-bold" type="submit"><img src="./icons/bx-search-alt.svg"></button>
+                        </form>-->
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
+    <div class="header-opcions">
+        <nav class="navegacion">
+            <ul class="main-menu">
+
+                <div class="menu-list">
+                    <button class="menu-list-btn"><a class="menu-list-link" href="#">La Universidad</a></button>
+                    <div class="submenu-list">
+                        <a href="https://blog.hubspot.com/">Blog</a>
+                        <a href="https://academy.hubspot.com/">Academy</a>
+                        <a href="https://www.youtube.com/user/hubspot">YouTube</a>
+                    </div>
+                </div>
+
+                <div class="menu-list">
+                    <button class="menu-list-btn"><a class="menu-list-link" href="#">Estudia con nosotros</a></button>
+                    <div class="submenu-list">
+                        <a href="https://blog.hubspot.com/">Blog</a>
+                        <a href="https://academy.hubspot.com/">Academy</a>
+                        <a href="https://www.youtube.com/user/hubspot">YouTube</a>
+                    </div>
+                </div>
+                <li><a href="#">Facultades</a></li>
+                <li><a href="#">Programas</a></li>
+                <li><a href="#">Nuevo Campus</a></li>
+                <li><a href="#">Financiación</a></li>
+                <li><a href="#">Emprendimiento</a></li>
+                <li><a href="#">Ed Tech</a></li>
+
+            </ul>
+        </nav>
+
+    </div>
     <main id="container-main">
         <h2 class="info-career-title T1">Ingeniería de Software – Virtual</h2>
         <section class="container-college-career">
@@ -31,7 +152,7 @@
                 </p>
                 <h4 class="info-career-title-data">Déjanos tus datos para más información</h4>
 
-                <form  class="container-info-career-form ">
+                <form class="container-info-career-form ">
                     <div class="info-career-form-input">
                         <label for="name">Nombre*</label>
                         <input class="form-input" required id="name" name="name" type="text">
@@ -63,7 +184,7 @@
                     </div>
 
                     <button type="submit">CONTINUAR</button>
-                    <a href="" >Revisar la política de protección de datos personales</a>
+                    <a href="">Revisar la política de protección de datos personales</a>
 
                 </form>
             </article>
@@ -84,7 +205,7 @@
         </section>
         <h2 class="sub-title-career">Titulaciones</h2>
         <section class="container-career-cycles">
-            <article class="career-cycles-card"> 
+            <article class="career-cycles-card">
                 <p>Técnica Profesional en</p>
                 <p>PROGRAMACIÓN DE APLICACIONES DE SOFTWARE</p>
                 <p>
@@ -92,7 +213,7 @@
                     Años de vigencia: 7 años
                     SNIES: 108334
                 </p>
-                <a>Ver tarifas de créditos aquí</a>
+                <a class="career-cycles-card-linkRates">Ver tarifas de créditos aquí</a>
             </article>
             <article class="career-cycles-card">
                 <p>Tecnología en</p>
@@ -102,24 +223,26 @@
                     Años de vigencia: 7 años
                     SNIES: 108335
                 </p>
-                <a>Ver tarifas de créditos aquí</a>
+                <a class="career-cycles-card-linkRates">Ver tarifas de créditos aquí</a>
             </article>
             <article class="career-cycles-card">
                 <p>Profesional en</p>
-                <p>INGENIERÍA DE SOFTWARE</p>
+                <p>INGENIERÍA DE SOFTWARE
+                    <span style="color:#d9d9d9">....................................</span>
+                </p>
                 <p>
                     Resolución 9057 del 28 de agosto de 2019
                     Años de vigencia: 7 años
                     SNIES: 109130
                 </p>
-                <a>Ver tarifas de créditos aquí</a>
+                <a class="career-cycles-card-linkRates">Ver tarifas de créditos aquí</a>
             </article>
         </section>
 
         <section class="container-career-laborField">
             <article class="career-laborField">
-                <h3 class="sub-title-career" >Campo Laboral</h3>
-                <ul>
+                <h3 class="sub-title-career">Campo Laboral</h3>
+                <ul class="list-laborField">
                     <li>Ingeniero de calidad.</li>
                     <li>Ingeniero de requerimientos.</li>
                     <li>Gerente de proyectos de software.</li>
@@ -131,11 +254,11 @@
                 </ul>
             </article>
             <article class="container-career-img-ing">
-                <img class="career-img-ing" src="./img/programadora-software-ucompensar.jpg">
                 <img class="career-img-ing" src="./img/Ingeniero-de-requerimientos-ucompensar.jpg">
+                <img class="career-img-ing" src="./img/Ingeniero-de-calidad-ucompensar.jpg">
             </article>
         </section>
-        <section>
+        <section class="container-career-enrollment">
             <h2 class="sub-title-career">Matrículas Abiertas</h2>
             <p>
                 Somos la institución universitaria para todos y nuestro objetivo
@@ -145,15 +268,15 @@
 
             <article>
                 <div>
-                    <img src="./img/Ingeniero-de-calidad-ucompensar.jpg">
+                    <img src="./img/programadora.jpg">
                     <h2>Este será tu perfil</h2>
                     <p>
-                        El ingeniero de software es competente en todas y cada una 
-                        de las etapas que comprenden el ciclo de vida de construcción 
-                        de software como requerimientos, análisis, diseño, arquitectura, 
+                        El ingeniero de software es competente en todas y cada una
+                        de las etapas que comprenden el ciclo de vida de construcción
+                        de software como requerimientos, análisis, diseño, arquitectura,
                         implementación, pruebas y puesta en marcha, así como en administrar
-                        tiempos, recursos y procesos de una manera efectiva para la 
-                        finalización exitosa de proyectos de software. 
+                        tiempos, recursos y procesos de una manera efectiva para la
+                        finalización exitosa de proyectos de software.
                     </p>
                 </div>
                 <div>
@@ -182,12 +305,12 @@
             <article>
                 <img class="logo-img" src="./img/LOGO U.svg">
                 <p>
-                    Fundación Universitaria Compensar P.J. Resolución 23635 
+                    Fundación Universitaria Compensar P.J. Resolución 23635
                     del 23 diciembre 1981 | 12455 del 9 de julio 2020. – VIGILADA
                     MINEDUCACIÓN
                 </p>
-                <p>Para requerimientos de autoridades, tutelas o notificaciones 
-                   judiciales por favor dirigirse al correo:
+                <p>Para requerimientos de autoridades, tutelas o notificaciones
+                    judiciales por favor dirigirse al correo:
                 </p>
                 <a>notificacionesjudiciales@ucompensar.edu.co</a>
                 <button>Escríbenos a WhatsApp</button>
@@ -211,6 +334,10 @@
             </article>
         </section>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
