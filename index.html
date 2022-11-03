@@ -15,31 +15,6 @@
 </head>
 
 <body>
-
-
-    <!--<div class="minimenu-container">
-        <div class="header-logo">
-            <img class="logo-img" src="img/LOGO U.svg">
-        </div>
-        <nav class="header-minimenu">
-            <i>
-                <a href="https://ucompensar.edu.co/inscripciones/">Aspirantes</a>
-                <a
-                    href="https://unipanamericanaeduco.sharepoint.com/portal%20mipana/SitePages/INICIOPORTAL.aspx">Estudiantes</a>
-                <a
-                    href="https://academico.ucompensar.edu.co:8091/academusoft/academico/inscripcionLinea4/consultaPublica/inicio.jsp?_ga=2.13743991.1975776578.1629394524-1415034027.1626278245">Estado
-                    de Admisión</a>
-                <a
-                    href="https://academico.ucompensar.edu.co:8091/academusoft/academico/inscripcion/ins_control_acceso.jsp?proceso=4">Reingresos</a>
-                <a href="https://estudiantes.ucompensar.edu.co:8081/pol/">Pago en Línea</a>
-                <a
-                    href="https://unipanamericanaeduco.sharepoint.com/Portal%20MiPana/SitePages/INICIOPORTAL.aspx">Aplicativos</a>
-                <a href="https://ucompensar.edu.co/emisora/">Emisora</a>
-                <a href="https://ucompensar.edu.co/blog/">Blog</a>
-
-            </i>
-        </nav>
-    </div>-->
     <header id="container-header">
         <div class="header-logo">
             <img class="logo-img" src="img/LOGO U.svg">
@@ -148,12 +123,12 @@
                 <p class="info-career">
                     Desarrolla soluciones de <strong>software</strong> y conviértete en un líder
                     digital de uno de los sectores con mayor crecimiento del mercado. ​​
-                    <br>Obtén tres titulaciones a lo largo de tu formación.
+                    <br><br>Obtén tres titulaciones a lo largo de tu formación.
                 </p>
                 <h4 class="info-career-title-data">Déjanos tus datos para más información</h4>
 
-                <form class="container-info-career-form ">
-                    <div class="info-career-form-input">
+                <form class="container-info-career-form">
+                    <div id="name" class="info-career-form-input">
                         <label for="name">Nombre*</label>
                         <input class="form-input" required id="name" name="name" type="text">
                     </div>
@@ -167,27 +142,68 @@
                     </div>
                     <div class="info-career-form-input">
                         <label for="mail">Email*</label>
-                        <input class="form-input" required id="mail" name="mail" type="email">
+                        <input class="form-input-email" required id="mail" name="mail" type="email">
                     </div>
                     <div class="info-career-form-input">
                         <label for="mail">Teléfono Celular*</label>
-                        <select></select>
-                        <input type="number" id="cel" name="cel">
+                        <span>
+                            <span>
+                                <select name="indicativo" id="indicativo">
+                                    <option value="+57">Colombia (+57)</option>
+                                    <option value="+506">Costa Rica (+506)</option>
+                                    <option value="+53">Cuba (+53)</option>
+                                    <option value="+238">Cabo Verde (+238)</option>
+                                </select>
+                            </span>
+
+                            <span>
+                                <input class="form-input" type="number" id="cel" name="cel">
+                            </span>
+                        </span>
                     </div>
                     <div class="info-career-form-input">
-                        <label for="mail">¿En qué departamento vives?*</label>
-                        <select></select>
-                    </div>
-                    <div class="info-career-form-input">
-                        <label for="mail">¿Aplica para homologación?*</label>
+                        <label for="departamento-label">¿En qué departamento vives?*</label>
+
+                        <select name="departamento" id="departamento">
+                            <option value="">Cundinamarca</option>
+                            <option value="">Cesar</option>
+                            <option value="">Tolima</option>
+                            <option value="">Antioquia</option>
+                        </select>
 
                     </div>
-
-                    <button type="submit">CONTINUAR</button>
-                    <a href="">Revisar la política de protección de datos personales</a>
-
                 </form>
+
+                <div class="career-form-input">
+                    <label for="mail">¿Aplica para homologación?*</label>
+                    <br>
+                    <span>
+                        <input type="radio" id="si" name="si">
+                        <label>Si</label>
+                    </span>
+                    <span>
+                        <input type="radio" id="no" name="no">
+                        <label>No</label>
+                    </span>
+                </div>
+                <div class="container-final-form">
+                    <div id="check">
+                        <input type="checkbox" id="response" name="response" />
+                        <label>* Al enviar este formulario declaro que conozco y acepto la Política de Protección de
+                            Datos Personales.*</label>
+                    </div>
+                    <br>
+                    <button type="submit">CONTINUAR</button>
+                    <br>
+                    <br>
+                    <a
+                        href="https://ucompensar.edu.co/wp-content/uploads/2021/06/POL-PAJ-02-V04-Tratamiento-de-datos-personales-1.pdf">
+                        Revisar la política de protección de datos personales
+                    </a>
+                </div>
+
             </article>
+
             <article>
                 <div class="info-career-img">
                     <img class="career-img" src="img/img-main.jpg">
@@ -228,7 +244,7 @@
             <article class="career-cycles-card">
                 <p>Profesional en</p>
                 <p>INGENIERÍA DE SOFTWARE
-                    <span style="color:#d9d9d9">....................................</span>
+                    <span style="color:#d9d9d9">....................................................</span>
                 </p>
                 <p>
                     Resolución 9057 del 28 de agosto de 2019
@@ -258,15 +274,15 @@
                 <img class="career-img-ing" src="./img/Ingeniero-de-calidad-ucompensar.jpg">
             </article>
         </section>
-        <section class="container-career-enrollment">
-            <h2 class="sub-title-career">Matrículas Abiertas</h2>
+        <!--<section class="container-career-enrollment">
+            <h2 class="sub-title-career bg">Matrículas Abiertas</h2>
             <p>
                 Somos la institución universitaria para todos y nuestro objetivo
                 es integrar a la comunidad con el sector productivo para afrontar
                 los desafíos del futuro.
             </p>
 
-            <article>
+            <article >
                 <div>
                     <img src="./img/programadora.jpg">
                     <h2>Este será tu perfil</h2>
@@ -333,7 +349,99 @@
                 </p>
             </article>
         </section>
+    </footer>-->
+        <section>
+            <!--Sebas-->
+            <div class="container-matriculas">
+                <h3 class="sub-title-career">Matrículas Abiertas</h3>
+                <p>Somos la institución universitaria para todos y nuestro objetivo es integrar a la comunidad con
+                    el sector productivo para afrontar los desafíos del futuro. </p>
+            </div>
+            <!--<h2 class="sub-title-career">Matrículas Abiertas</h2>
+            <p>
+                Somos la institución universitaria para todos y nuestro objetivo
+                es integrar a la comunidad con el sector productivo para afrontar
+                los desafíos del futuro.
+            </p>-->
+
+            <article>
+                <div class="experto-section">
+                    <div class="container-experto">
+                        <img src="./img/Ingeniero-de-calidad-ucompensar.jpg">
+                        <h2>Este será tu perfil</h2>
+                        <p>
+                            El ingeniero de software es competente en todas y cada una
+                            de las etapas que comprenden el ciclo de vida de construcción
+                            de software como requerimientos, análisis, diseño, arquitectura,
+                            implementación, pruebas y puesta en marcha, así como en administrar
+                            tiempos, recursos y procesos de una manera efectiva para la
+                            finalización exitosa de proyectos de software.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h3>Sé un experto en:</h3> <!--   <p>&nbsp;</p>-->
+                    <ul type="disc">
+                        <li>Diseño y desarrollo web.</li>
+                        <li>Diseño UX/UI.</li>
+                        <li>Diseño y desarrollo de aplicaciones móviles.</li>
+                        <li>Arquitectura de software.</li>
+                        <li>Desarrollo backEnd.</li>
+                        <li>Desarrollo frontEnd.</li>
+                        <li>Ingeniería de requerimientos.</li>
+                        <li>Cloud Computing.</li>
+                        <li>Testing y aseguramiento de la calidad.</li>
+                        <li>Metodologías ágiles de desarrollo.</li>
+                        <li>Gestión de proyectos de software.</li>
+                        <li>Integración de tecnologías.</li>
+                    </ul>
+                    <a 
+                        class="arrow-btn" 
+                        href="https://ucompensar.edu.co/wp-content/uploads/2021/04/Brochure-Ingenieria-de-Software-Virtual.pdf" 
+                        target="_blank">
+                        Plan de Estudios
+                    </a>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <footer id="container-footer">
+        <section>
+            <article>
+                <img class="logo-img" src="./img/LOGO U.svg">
+                <p>
+                    Fundación Universitaria Compensar P.J. Resolución 23635
+                    del 23 diciembre 1981 | 12455 del 9 de julio 2020. – VIGILADA
+                    MINEDUCACIÓN
+                </p>
+                <p>Para requerimientos de autoridades, tutelas o notificaciones
+                    judiciales por favor dirigirse al correo:
+                </p>
+                <a>notificacionesjudiciales@ucompensar.edu.co</a>
+                <button>Escríbenos a WhatsApp</button>
+            </article>
+            <article>
+                <h3>Bogotá</h3>
+                <p>
+                    Sede principal<br>
+                    Avenida (Calle) 32 No. 17 – 30<br>
+                    Teléfono: 601 338 06 66<br>
+                </p>
+            </article>
+            <article>
+                <h3>Villavicencio</h3>
+                <p>
+                    Sede Cofrem<br>
+                    Carrera 35 No. 20A-02<br>
+                    Vía Catama (antes del Colegio Cofrem)<br>
+                    Teléfono: 608 681 86 40<br>
+                </p>
+            </article>
+        </section>
     </footer>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
