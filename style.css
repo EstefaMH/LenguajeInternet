@@ -1,16 +1,16 @@
-:root{
-    --color-blue : #001933;
-    --color-grey : #4E5357;
-    --grey-title : #BAB8B9;
-    --color-orange : #FF6600;
-    --color-grey-btn :#F5F5F5;
+:root {
+    --color-blue: #001933;
+    --color-grey: #4E5357;
+    --grey-title: #BAB8B9;
+    --color-orange: #FF6600;
+    --color-grey-btn: #F5F5F5;
 }
 
-body{
+body {
     font-family: "ArabotoNormal";
     color: var(--color-blue);
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
 
@@ -42,7 +42,7 @@ body{
 
 
 /*----------------------- HEADER --------------------*/
-#container-header{
+#container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,44 +50,44 @@ body{
     border-bottom: 1px solid #d9d9d9;
 }
 
-.header-logo{
+.header-logo {
     flex-basis: 50%;
 }
 
-.logo-img{
+.logo-img {
     width: 100%;
 }
 
-.header-info{
+.header-info {
     display: flex;
     justify-content: end;
     flex-basis: 50%;
 }
 
-.header-icon{
+.header-icon {
     border-radius: 100%;
     border: none;
     margin-left: 3%;
     cursor: pointer;
 }
 
-.btn-menu{
+.btn-menu {
     border: none;
     border-radius: 100%;
     background-color: var(--color-grey-btn);
 }
 
 
-.hamburger{
-   border: 2px solid var(--color-grey-btn);
+.hamburger {
+    border: 2px solid var(--color-grey-btn);
 }
 
-.main-menu{
+.main-menu {
     display: none;
 }
 
 
-.header-opcions{
+.header-opcions {
     margin: 2% 0 5% 0;
 }
 
@@ -95,50 +95,45 @@ body{
     font-family: 'ArabotoBlack';
 }
 
-.container-matriculas {
-    background-color: #d9d9d9;
-    Display: flex;
-    Flex-direction: column;
-    align-items: center;
 
-}
 
 
 /*-------------------- MAIN --------------------*/
 
 
-.T2{
+.T2 {
     display: none;
 }
-.container-college-career{
+
+.container-college-career {
     display: flex;
     flex-direction: column-reverse;
 }
 
-.container-info-career{
+.container-info-career {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.info-career-title{
-    color: var(--color-blue);  
+.info-career-title {
+    color: var(--color-blue);
     padding: 0 0 0 3%;
     font-size: 2rem;
 }
 
-.info-career{
+.info-career {
     font-family: "ArabotoNormal";
     font-size: 1.2rem;
     color: var(--color-blue);
     padding: 0 2.5% 0 2%;
     text-align: justify;
-    
+
 }
 
 
-.info-career-title-data{
+.info-career-title-data {
     color: var(--grey-title);
     font-size: 1.8rem;
     font-weight: 700;
@@ -146,23 +141,23 @@ body{
     margin-bottom: 2%;
 }
 
-.info-career-form-input{
+.info-career-form-input {
     display: flex;
     flex-direction: column;
 }
 
-.form-input{
+.form-input {
     border: none;
     border-bottom: 1.5px solid var(--color-blue);
     padding: 3%;
-    margin-bottom: 1.5% ;
+    margin-bottom: 1.5%;
 }
 
-.container-info-career-form{
+.container-info-career-form {
     width: 90%;
 }
 
-.container-final-form button{
+.container-final-form button {
     color: #ffffff;
     background: #f4632a;
     border: 1px solid #E5E7E9;
@@ -174,7 +169,7 @@ body{
     font-style: var(--grey-title);
 }
 
-#departamento{
+#departamento {
     margin-top: 3px;
     font-size: medium;
     color: rgb(104, 104, 104);
@@ -188,11 +183,12 @@ body{
 
 }
 
-#homologacion{
+#homologacion {
     font-family: Helvetica, Arial, sans-serif;
     color: #4E5357;
 }
-.container-final-form{
+
+.container-final-form {
     align-items: center;
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
@@ -200,13 +196,13 @@ body{
     padding: 3%;
 }
 
-#check{
+#check {
     text-align: left;
     display: flex;
 }
 
 
-.container-final-form button:hover{
+.container-final-form button:hover {
     color: #E5E7E9;
     background: #85807e;
     border: 1px solid #E5E7E9;
@@ -214,34 +210,35 @@ body{
 }
 
 
-.form-input-email{
+.form-input-email {
     border: none;
     border-bottom: 1.5px solid var(--color-blue);
     padding: 3%;
     margin-bottom: 1.5%;
     margin-top: 20px;
 }
-.form-input{
+
+.form-input {
     border: none;
     border-bottom: 1.5px solid var(--color-blue);
     padding: 3%;
     margin-bottom: 1.5%;
 }
 
-.info-career-form-input select{
-    margin:1px;
+.info-career-form-input select {
+    margin: 1px;
     border-color: white;
 }
 
-.info-career-img{
+.info-career-img {
     width: 100%;
 }
 
-.career-img{
+.career-img {
     width: 100%;
 }
 
-.info-ministryEducation{
+.info-ministryEducation {
     background-color: #627989;
     padding: 2%;
     margin: 0;
@@ -249,29 +246,49 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.sub-title-career{
+.career-laborField {
+    margin-left: 40px;
+}
+
+.sub-title-career {
     color: var(--color-blue);
     font-size: 2.5rem;
     font-family: 'ArabotoBlack';
-    text-align: center;
+    text-align: left;
     padding: 3% 0 3% 5%;
 }
 
-.list-laborField{
-   margin-left: 5%;
-   font-weight: 500;
-   line-height: 0.8cm;
-}
-.container-career-img-ing{   
-    display: flex;
-    justify-content: space-around;
+.sub-title-expert {
+    color: var(--color-blue);
+    font-size: 2.5rem;
+    font-family: 'ArabotoBlack';
+    text-align: left;
+    padding: 3% 0 3% 5%;
 }
 
-.career-img-ing{
+.list-laborField {
+    margin-left: 10%;
+    font-weight: 500;
+    line-height: 0.8cm;
+    font-family: "ArabotoNormal";
+    font-size: 1.2rem;
+    color: var(--color-blue);
+    padding: 0 2.5% 0 2%;
+    text-align: justify;
+
+}
+
+.container-career-img-ing {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 40px;
+}
+
+.career-img-ing {
     width: 45%;
 }
 
-.container-career-enrollment{
+.container-career-enrollment {
     margin-top: 10%;
     text-align: center;
 }
@@ -282,15 +299,15 @@ body{
     font-size: 1.2rem;
 }
 
-.container-career-cycles{
+.container-career-cycles {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 2%;  
+    padding: 2%;
 }
 
-.career-cycles-card{
+.career-cycles-card {
     width: 90%;
     background-color: #d9d9d9;
     border-radius: 15px;
@@ -300,119 +317,363 @@ body{
     height: 100%;
 }
 
-.career-cycles-card-linkRates{
+.career-cycles-card-linkRates {
     color: var(--color-orange);
     font-size: 1.2rem;
 }
 
-.bg{
+.bg {
     background-color: var(--color-grey-btn);
 }
 
+.container-matriculas {
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #F8F7F5;
+    Display: flex;
+    Flex-direction: column;
+    align-items: center;
 
-/*-------------------- FOOTER ------------------*/
-#container-footer{
-    background-color: var(--color-grey);
-    padding: 3%;
-    color: white;
 }
 
-@media screen and (min-width: 700px ) {
-    .T1{
+.matriculas-parrafo {
+    font-family: "ArabotoNormal";
+    font-size: 1.2rem;
+    color: var(--color-blue);
+    padding: 0 2.5% 0 2%;
+    text-align: justify;
+}
+
+
+.expert-section {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    margin-left: 3%;
+}
+
+.expert-parrafo {
+    font-family: "ArabotoNormal";
+    font-size: 1.2rem;
+    color: var(--color-blue);
+    text-align: left;
+}
+
+.expert-list {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+.list-parrafo {
+    font-family: "ArabotoNormal";
+    font-size: 1.2rem;
+    color: var(--color-blue);
+    text-align: left;
+    list-style-type: none;
+}
+
+.expert-list ul li:before {
+    content: '';
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #f60;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+.expert-list ul li {
+    position: relative;
+    padding-bottom: 17px;
+    padding-left: 25px;
+}
+
+.arrow-btn {
+    width: 338px;
+    height: 48px;
+    background: #446d89;
+    color: #fff;
+    font-size: 18px;
+    line-height: 32px;
+    display: block;
+    text-decoration: none;
+    padding: 8px 12px 12px 75px;
+    max-width: 100%;
+    position: relative;
+    transition: all 0.3s ease-in;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.arrow-btn:before {
+    content: '';
+    position: absolute;
+    background: #2c90e8 url(./icons/down-arrow.svg) no-repeat center;
+    width: 56px;
+    height: 48px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 16px;
+    top: 0;
+    left: 0;
+}
+
+/*-------------------- FOOTER ------------------*/
+footer {
+    background: #4e5357;
+    padding: 82px 40px 40px 40px;
+
+}
+
+#container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-grey);
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.footer-left-block {
+    width: 33.3333%;
+    padding-right: 20px;
+}
+
+.footer-right-block {
+    width: 66.6666%;
+    padding-left: 20px;
+}
+
+.logoBlanco {
+    width: 474px;
+    height: 690;
+}
+
+.textfooter {
+    margin-top: 10%;
+}
+
+.footer-left-block .textfooter p {
+    margin: 0px 0 15px 0;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    color: #fff;
+}
+
+a {
+    color: #f60;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn {
+    width: 328px;
+    height: 53px;
+    background: #fff;
+    border-radius: 50px;
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    display: block;
+    text-decoration: none;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: underline;
+    max-width: 100%;
+}
+
+.whatsapp-btn::before {
+    content: '';
+    background: url(./icons/whatsapp-icon.svg) no-repeat center;
+    width: 43px;
+    height: 43px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.footer-left-block .siguenosGrupo h6 {
+    margin: 0 0 20px;
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    font-size: 20px;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
+}
+
+.footer-left-block ul {
+    list-style-type: none;
+}
+
+.footer-left-block ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.footer-left-block .widget_nav_menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-left-block .widget_nav_menu li a {
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-left-block .widget_nav_menu li {
+    list-style: none;
+    margin: 0 25px 0 0;
+    padding: 0;
+    position: relative;
+}
+
+.top-footer-boxes {
+    display: flex;
+    margin-left: 20%;
+    justify-content: space-between;
+}
+
+.footer-box {
+    padding-right: 10px;
+}
+
+.btm-footer-box h6 {
+    font-size: 18px;
+    color: #f60;
+    line-height: 1.2;
+    margin-left: 20%;
+}
+
+.btm-footer-box ul {
+    list-style: none;
+    margin-left: 20%;
+    padding: 0;
+}
+
+.btm-footer-box ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-style: normal;
+}
+
+
+@media screen and (min-width: 700px) {
+    .T1 {
         display: none;
     }
 
-    .T2{
+    .T2 {
         display: block;
     }
 
-    .container-info-career{
+    .container-info-career {
         flex-basis: 50%;
     }
 
-    .container-info-career-form{
+    .container-info-career-form {
         width: 90%;
-        display:grid;
-        grid-template-rows: 100px 100px ;
+        display: grid;
+        grid-template-rows: 100px 100px;
         grid-template-columns: 200px 200px 200px;
         grid-gap: 10px;
         font-family: Helvetica, Arial, sans-serif;
-        
+
     }
-    .info-career-form-input{
+
+    .info-career-form-input {
         display: flex;
-        color:#4E5357;
+        color: #4E5357;
         flex-direction: column;
-        font-size:medium;   
+        font-size: medium;
     }
-    
-    
-    .container-info-career-form{
+
+
+    .container-info-career-form {
         width: 90%;
-        display:grid;
-        grid-template-rows: 100px 100px ;
+        display: grid;
+        grid-template-rows: 100px 100px;
         grid-template-columns: 200px 200px 200px;
         grid-gap: 10px;
         font-family: Helvetica, Arial, sans-serif;
-        
+
     }
-    #homologacion{
-       
+
+    #homologacion {
+
         font-family: Helvetica, Arial, sans-serif;
         color: #4E5357;
     }
-    .container-final-form{
+
+    .container-final-form {
         align-items: center;
         text-align: center;
         font-family: Helvetica, Arial, sans-serif;
         color: #4E5357;
         padding: 3%;
     }
-   
-    
-    
-   
+
+
+
 }
 
 @media screen and (min-width:900px) {
-    .header-logo{
+    .header-logo {
         flex-basis: 20%;
     }
 
-    .header-info{
+    .header-info {
         display: flex;
         justify-content: end;
         flex-basis: 80%;
     }
 
-    .main-menu{
+    .main-menu {
         display: flex;
         justify-content: space-evenly;
     }
-    
-    
+
+
     .menu-list {
         display: inline-block;
         position: relative;
         z-index: 3;
-        
+
     }
-    
+
     .menu-list-btn {
         border: none;
         background-color: transparent;
     }
-    
-    .menu-list-link{
+
+    .menu-list-link {
         text-decoration: none;
         font-family: 'ArabotoBold';
         color: var(--color-blue);
         font-size: 1.2rem;
     }
-    
-    .menu-list-link:hover{
+
+    .menu-list-link:hover {
         color: var(--color-orange);
     }
+
     .submenu-list {
         display: none;
         position: absolute;
@@ -420,63 +681,109 @@ body{
         overflow: auto;
         background-color: white;
     }
-    
+
     .menu-list:hover .submenu-list {
         display: block;
         z-index: 3;
     }
-    
+
     .submenu-list a {
         display: block;
         color: #000000;
         padding: 5px;
         text-decoration: none;
     }
-    
+
     .submenu-list a:hover {
         color: #FFFFFF;
         background-color: var(--color-orange);
     }
-    
+
     .info-career-title {
         font-size: 2.5rem;
     }
-    
+
 }
 
 
-@media screen and (min-width: 1024px ) {
-    .container-college-career{
+
+@media screen and (min-width: 1024px) {
+    .container-college-career {
         display: flex;
         flex-direction: row;
     }
 
-    .container-career-cycles{
+    .container-career-cycles {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        
+
     }
 
-    .container-career-laborField{
+    .container-career-laborField {
         display: flex;
 
     }
-    
-    .career-laborField{
+
+    .career-laborField {
         width: 35%;
     }
 
-    .container-career-img-ing{
-       
+    .container-career-img-ing {
         display: flex;
         width: 65%;
     }
 
-    .career-img-ing{
+    .career-img-ing {
         width: 50%;
         height: 80%;
     }
-    
+
+    .container-expert {
+
+        display: flex;
+    }
+
+    .expert-section {
+        width: 47%;
+    }
+
+    .developer-img {
+        size: auto;
+        align-items: center;
+        width: 100%;
+        height: 70%;
+        margin-bottom: 40px;
+    }
+
+    .expert-list {
+        display: block;
+
+    }
+
+    .bottom-line-heading {
+        color: #f60;
+        padding-bottom: 11px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .bottom-line-heading:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #f60;
+        left: 0;
+        bottom: 0;
+    }
+
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+
+
 }
